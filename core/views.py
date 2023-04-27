@@ -1,6 +1,6 @@
 from django.shortcuts import render, redirect
 from item.models import Category, Item
-from .forms import SignupForm, LoginForm
+from .forms import SignupForm 
 
 def index(request):
     item = Item.objects.filter(is_sold=False)[0:6]
